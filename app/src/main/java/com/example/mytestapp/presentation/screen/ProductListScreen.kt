@@ -17,14 +17,14 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.mytestapp.domain.model.Product
 import com.example.mytestapp.presentation.UiState
-
+import java.util.Date
 
 @Composable
 fun ProductListScreen(
     viewModel: ProductViewModel,
     modifier: Modifier = Modifier
 ) {
-
+    val unused = "test"
     val state by viewModel.sate.collectAsStateWithLifecycle()
 
     Box(
@@ -76,8 +76,8 @@ fun ProductList(
 
 @Composable
 fun ProductItem(product: Product) {
-    Card(modifier = Modifier.padding(8.dp)) {
-        Column(modifier = Modifier.padding(8.dp)) {
+    Card(modifier = Modifier.padding(10.dp)) {
+        Column(modifier = Modifier.padding(10.dp)) {
             Text(text = product.title)
             Text(text = product.price)
         }
