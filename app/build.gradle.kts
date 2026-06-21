@@ -15,8 +15,8 @@ android {
         applicationId = "com.example.mytestapp"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -57,7 +57,7 @@ dependencies {
     // For Kotlin projects
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
 
-// For Jetpack Compose UI
+    // For Jetpack Compose UI
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
