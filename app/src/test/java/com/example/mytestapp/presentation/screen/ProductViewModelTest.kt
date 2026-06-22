@@ -81,7 +81,7 @@ class ProductViewModelTest {
             )
 
             assertEquals(
-                "iPhone1",
+                "iPhone",
                 data.first().title
             )
         }
